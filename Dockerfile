@@ -6,4 +6,4 @@ RUN mkdir -p /mnt/DICOM
 COPY MRBRAIN.DCM /mnt/DICOM
 COPY entrypoint.sh /
 
-CMD ["entrypoint.sh"]
+CMD ["/entrypoint.sh"]
