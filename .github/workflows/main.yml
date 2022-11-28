@@ -11,4 +11,4 @@ jobs:
     - name: Run test upload
       run: |
         docker build . -t mirc-ctp:tester
-        docker run mirc-ctp:tester
+        docker run mirc-ctp:tester  2>&1
