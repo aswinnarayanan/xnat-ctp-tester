@@ -1,5 +1,5 @@
 #!/bin/bash
 
 java -jar Runner.jar start &
-sleep(10)
+sleep 10
 java -jar Runner.jar stop
