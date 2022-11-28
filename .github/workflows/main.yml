@@ -1,4 +1,4 @@
-name: Run
+name: Run test upload
 
 on:
   workflow_dispatch:
