@@ -8,8 +8,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v3
+    - name: Build ctp runner
+      run: docker build . -t mirc-ctp:tester
     - name: Run test upload
-      run: |
-        docker build . -t mirc-ctp:tester
-        docker run mirc-ctp:tester
-        exit 0
+      run: docker run mirc-ctp:tester
