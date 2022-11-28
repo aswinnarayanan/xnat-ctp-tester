@@ -6,3 +6,5 @@ RUN mkdir -p /mnt/DICOM
 COPY MRBRAIN.DCM /mnt/DICOM
 
 RUN timeout −−preserve−status 10 java -jar Runner.jar start
+
+RUN ["/bin/sh", "-c", "timeout", "−−preserve−status", "10", "java", "-jar", "Runner.jar", "start"]
